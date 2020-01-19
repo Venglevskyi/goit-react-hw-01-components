@@ -1,0 +1,43 @@
+@value main-background, card-background, stats-background, text-color  from '../../vars.module.css';
+
+.friendList {
+  width: 100%;
+  padding: 10px 0;
+  background: main-background;
+}
+
+.item {
+  width: 240px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  background: card-background;
+}
+
+.spanStatus {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.online {
+  composes: spanStatus;
+  background: green;
+}
+
+.offline {
+  composes: spanStatus;
+  background: red;
+}
+
+.avatar {
+  margin-right: 10px;
+  border-radius: 10%;
+}
+
+.name {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}

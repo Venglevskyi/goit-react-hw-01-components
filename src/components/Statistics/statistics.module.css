@@ -1,0 +1,51 @@
+@value main-background, card-background, stats-background, text-color  from '../../vars.module.css';
+
+.statistics {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  background: main-background;
+}
+
+.title {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  width: 240px;
+  padding: 20px 0;
+  background: card-background;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.statList {
+    background: stats-background;
+    list-style: none;
+    width: 240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid main-background;
+  }
+  
+  .item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid main-background;
+  }
+  
+  .label {
+    display: block;
+    color: card-background;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 4px;
+  }
+  
+  .percentage {
+    font-weight: 500;
+    color: card-background;
+  }
