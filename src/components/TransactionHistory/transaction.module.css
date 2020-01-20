@@ -1,0 +1,24 @@
+@value main-background, card-background, stats-background, text-color from '../../vars.module.css';
+
+.transactionHistory {
+  width: 600px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+th {
+  width: 150px;
+  height: 50px;
+  background: #4fc4f6;
+}
+
+tr {
+  height: 40px;
+  background: main-background;
+}
+
+td {
+  text-align: center;
+  color: text-color;
+  text-transform: capitalize;
+}
