@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import user from "./components/Profile/user.json";
 import statisticalData from "./components/Statistics/statistical-data.json";
@@ -19,7 +18,5 @@ const App = () => (
     <TransactionHistory items={items} />
   </>
 );
-
-ReactDOM.render(<App />, document.querySelector("#root"));
 
 export default App;
