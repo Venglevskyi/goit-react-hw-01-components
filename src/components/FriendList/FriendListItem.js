@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 import styles from "./friendList.module.css";
 
-const FriendListItem = ({ friends }) => {
-  const { isOnline, avatar, name } = friends;
+const FriendListItem = ({ friend }) => {
+  const { isOnline, avatar, name } = friend;
   return (
     <li className={styles.item}>
       <span className={isOnline ? styles.online : styles.offline}></span>
@@ -19,14 +19,12 @@ FriendListItem.defaultProps = {
 };
 
 FriendListItem.propTypes = {
-  friends: PropTypes.arrayOf(
-    PropTypes.exact({
-      avatar: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      isOnline: PropTypes.bool.isRequired,
-      id: PropTypes.number.isRequired
-    })
-  )
+  friends: PropTypes.exact({
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired
+  })
 };
 
 export default FriendListItem;

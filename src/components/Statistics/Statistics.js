@@ -8,9 +8,13 @@ const Statistics = ({ title, stats }) => (
     {title && <h2 className={styles.title}>{title}</h2>}
     <ul className={styles.statList}>
       {stats.map(({ id, label, percentage }) => (
-        <li key={id} className={styles.item} style = {{
-          backgroundColor: randomTheme(),
-        }}>
+        <li
+          key={id}
+          className={styles.item}
+          style={{
+            backgroundColor: randomTheme()
+          }}
+        >
           <span className={styles.label}>{label}</span>
           <span className={styles.percentage}>{percentage}</span>
         </li>
@@ -46,6 +50,5 @@ const randomTheme = () => {
 
   return colors[Math.floor(Math.random() * colors.length)];
 };
-
 
 export default Statistics;
